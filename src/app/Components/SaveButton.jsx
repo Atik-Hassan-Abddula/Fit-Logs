@@ -5,10 +5,10 @@ import { FitlogExersiceContext } from "@/app/Context/FitlogContex";
 import { toast } from "react-toastify";
 
 const SaveButton = ({ exercise }) => {
-  const { saved, SetSaved } = useContext(FitlogExersiceContext);
+  const { save, Setsave } = useContext(FitlogExersiceContext);
 
   const handleSave = () => {
-    const alreadySaved = saved.some(
+    const alreadySaved = save.some(
       (item) => item.id === exercise.id
     );
 
@@ -17,7 +17,7 @@ const SaveButton = ({ exercise }) => {
       return;
     }
 
-    SetSaved([...saved, exercise]);
+    Setsave([...save, exercise]);
 
     toast.success(`✅ ${exercise.name} saved successfully!`);
   };

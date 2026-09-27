@@ -1,7 +1,7 @@
 "use client";
 
-import { FitlogExersiceContext } from "@/app/Context/FitlogContex";
 import React, { useContext } from "react";
+import { FitlogExersiceContext } from "@/app/Context/FitlogContex";
 import { toast } from "react-toastify";
 
 const PlanButton = ({ exercise }) => {
@@ -13,13 +13,17 @@ const PlanButton = ({ exercise }) => {
     );
 
     if (alreadyAdded) {
-      toast.error(`❌ ${exercise.name} is already in today's plan!`);
+      toast.error(
+        `❌ ${exercise.name} is already in today's plan!`
+      );
       return;
     }
 
     Setplan([...plan, exercise]);
 
-    toast.success(`✅ ${exercise.name} added to today's plan!`);
+    toast.success(
+      `✅ ${exercise.name} added to today's plan!`
+    );
   };
 
   return (
