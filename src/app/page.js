@@ -2,7 +2,7 @@
 import React from 'react';
 import HeroPage from './Card/page';
 import CardPage from './Card/page';
-import PageCrds from './Cards/page';
+import PageCrds from './Components/page';
 
 
 

@@ -3,24 +3,22 @@ import React from 'react';
 import logo from '../assets/logo.png';
 import Image from 'next/image';
 
+
 const Navbar = () => {
   const Links = (
     <>
       <li>
         <Link 
-          href="/workouts" 
+          href="/" 
           className="bg-[#1a2e05] text-[#a3e635] font-medium rounded-full px-5 py-2 hover:bg-[#1a2e05]"
         >
           Workouts
         </Link>
       </li>
       <li>
-        <Link 
-          href="/my-plan" 
-          className="text-gray-400 hover:text-white px-5 py-2 rounded-full"
-        >
-          My Plan
-        </Link>
+       <Link href="/TodaysPlan">
+     Todays Plan
+       </Link>
       </li>
     </>
   );

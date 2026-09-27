@@ -1,3 +1,5 @@
+import PlanButton from "@/app/Components/FitlogDetiles/PlanButton";
+import SaveButton from "@/app/Components/SaveButton";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -174,13 +176,11 @@ const DynamicCard = async ({ params }) => {
               {/* ================= BUTTONS ================= */}
               <div className="mt-6 flex flex-wrap gap-3">
 
-                <button className="rounded-xl bg-lime-400 px-5 py-3 text-xs font-bold text-black transition hover:bg-lime-300 hover:scale-105">
-                  ✓ Add to today&apos;s plan
-                </button>
+               <PlanButton exercise={exercise}/>
 
-                <button className="rounded-xl border border-[#3a3e46] px-5 py-3 text-xs font-medium text-gray-300 transition hover:bg-[#191c21]">
-                  ♡ Save for later
-                </button>
+                  {/* ♡ Save for later */}
+                  <SaveButton exercise={exercise}/>
+                
 
               </div>
 
