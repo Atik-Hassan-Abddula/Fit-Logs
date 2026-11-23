@@ -64,7 +64,7 @@ book-vibe-resources/
 ## 🌐 Live Demo
 
 **Live Website:**
-https://book-vibe-resources.vercel.app
+https://fit-logs-atik-hasan.netlify.app/Card
 
 ## 🛠️ Run Locally
 
